@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar tailwind</title>
+    <link rel="stylesheet" type="text/css" href="final.css">
+</head>
+<!-- Nav Bar goes here -->
+<nav class="bg-danger">
+    <div class="max-w-full mx-auto">
+        <div class="flex justify-between mr-6">
+            <div class="flex space-x-4">
+                <!-- Logo -->
+                <div>
+                    <a href="#" class=" flex items-center py-4 px-2 text-gray-700 hover:text-indigo-500">
+                        <svg class="h-10 w-10 mr-1 text-white" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                          </svg>
+                          <span class="text-white font-montse font-bold ml-3 ">Travel Corp</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Nav Bar -->
+            <div class="hidden md:flex flex items-center space-x-4">
+                <a href="#" class="font-montse font-normal py-5 px-4 text-white hover:text-purple-800">Home</a>
+                <a href="#" class="font-montse font-normal  py-4 px-2 text-white hover:text-purple-800">About</a>
+                <a href="#" class="font-montse font-normal  py-4 px-2 text-white hover:text-purple-800">Pricing</a>
+                <a href="#" class="font-montse font-normal  py-4 px-2 text-white hover:text-purple-800">Login</a>
+                <a href="" class="font-montse font-normal  py-2 px-8 bg-purple-300 hover:bg-bigBlue text-white hover:text-white rounded transition duration-300">Signup</a>
+            </div>
+            <!-- Mobile Button  -->
+            <div class="md:hidden flex items-center">
+                <button class="mobile-menu-button">
+                    <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                      </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden">
+        <a href="#" class="block py-2 px-4 text-sm text-white hover:bg-bigBlue">Home</a>
+        <a href="#" class="block py-2 px-4 text-sm text-white hover:bg-bigBlue">About</a>
+        <a href="#" class="block py-2 px-4 text-sm text-white hover:bg-bigBlue">Pricing</a>
+        <a href="#" class="block py-2 px-4 text-sm text-white hover:bg-bigBlue">Login</a>
+    </div>
+</nav>
+<!-- End of Nav Bar -->
+<!-- Content -->
+<body class="h-screen bg-lovely">
+    <section>
+        <div class="container mx-auto px-5 py-24 mx-auto" ">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-3xl text-purple-700 text-opacity-50 font-semibold text-purple-700">Tailwind Responsive Cards</h1>
+            </div>
+            <!-- Cards container -->
+            <div class="cards-container flex flex-1 flex-row flex-wrap">
+                <!-- First Card Box -->
+                <div class="flex flex-row p-4 sm:w-1/2 lg:w-1/3">
+                    <div class=" bg-gray-100 h-full border-2 border-gray-200 border-opacity-600 rounded-lg overflow-hidden">
+                        <img src="assets/pic1.jpg" alt="image" class="lg:h-72 md:h-48 w-full object-cover object-center">
+                        <div class="p-6 hover:bg-indigo-400 hover:text-white transition duration-300 ease-in">
+                            <h2 class="text-base font-medium text-emerald-300 mb-1">May 11, 2021</h2>
+                            <h1 class="text-2xl font-semibold mb-3">Time for Vacation</h1>
+                            <p class="leading-releaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ea dolores doloribus distinctio aliquam, unde blanditiis quaerat velit magnam, reiciendis voluptatibus facere autem eligendi! Aliquid repellat quisquam dolor voluptatum ex.</p>
+                            <div class="flex-items-center flex-wrap">
+                                <button class="py-2 px-4 font-semibold text-white rounded-lg shadow-md bg-purple-300 hover:bg-bigBlue">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of First Card Box -->
+                <!-- Second Card Box -->
+                <div class="flex flex-row p-4 sm:w-1/2 lg:w-1/3">
+                    <div class="bg-gray-100 h-full border-2 border-gray-200 border-opacity-600 rounded-lg overflow-hidden">
+                        <img src="assets/pic2.jpg" alt="image" class="lg:h-72 md:h-48 w-full object-cover object-center">
+                        <div class="p-6 hover:bg-indigo-400 hover:text-white transition duration-300 ease-in">
+                            <h2 class="text-base font-medium text-emerald-300 mb-1">June 11, 2021</h2>
+                            <h1 class="text-2xl font-semibold mb-3">Hit the Road</h1>
+                            <p class="leading-releaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ea dolores doloribus distinctio aliquam, unde blanditiis quaerat velit magnam, reiciendis voluptatibus facere autem eligendi! Aliquid repellat quisquam dolor voluptatum ex.</p>
+                            <div class="flex-items-center flex-wrap">
+                                <button class="py-2 px-4 font-semibold text-white rounded-lg shadow-md bg-purple-300 hover:bg-bigBlue">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Second Card Box -->
+                <!-- Third Card Box -->
+                <div class="flex flex-row p-4 sm:w-1/2 lg:w-1/3">
+                    <div class="bg-gray-100 h-full border-2 border-gray-200 border-opacity-600 rounded-lg overflow-hidden">
+                        <img src="assets/pic3.jpg" alt="image" class="lg:h-72 md:h-48 w-full object-cover object-center">
+                        <div class="p-6 hover:bg-indigo-400 hover:text-white transition duration-300 ease-in">
+                            <h2 class="text-base font-medium text-emerald-300 mb-1">July 11, 2021</h2>
+                            <h1 class="text-2xl font-semibold mb-3">Friends Adventure</h1>
+                            <p class="leading-releaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ea dolores doloribus distinctio aliquam, unde blanditiis quaerat velit magnam, reiciendis voluptatibus facere autem eligendi! Aliquid repellat quisquam dolor voluptatum ex.</p>
+                            <div class="flex-items-center flex-wrap">
+                                <button class="py-2 px-4 font-semibold text-white rounded-lg shadow-md bg-purple-300 hover:bg-bigBlue">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of third Card Box -->
+                <!-- End of Cards Container -->
+            </div>
+        </div>
+    </section>
+</body>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+

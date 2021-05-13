@@ -1,0 +1,14 @@
+{
+  "name": "navbar-tail",
+  "version": "1.0.0",
+  "description": "Navigation bar practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Syd Rob",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.1.2"
+  }
+}
